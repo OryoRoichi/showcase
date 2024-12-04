@@ -1,0 +1,15 @@
+.push{
+    padding: 1rem;
+    margin: 4rem;
+}
+ 
+.flex-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.flex-item {
+    margin: 0.5rem;
+}

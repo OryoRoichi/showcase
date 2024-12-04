@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    column-gap: 20px ;
+    background: #cdcdda;
+    padding-inline: 32px;
+}
+.header-menu-list{
+    display: flex;
+    column-gap: 50px;
+}
+.header-menu-link{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    column-gap: 7px;
+}
+a{
+    color: var(--color-dark);
+}
+a:hover{
+color: var(--tui-border-focus);
+}
+
+.header-menu-link.current-active::after{
+    content:"";
+    width: 5px;
+    height: 5px;
+    background-color: currentColor;
+    border-radius: 50%;
+
+}
+.header-logo{
+    flex-shrink: 0;
+
+}

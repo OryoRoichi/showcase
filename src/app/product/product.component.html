@@ -1,0 +1,18 @@
+<div  class="flex-container">
+    <ul  *ngFor="let val of values$ | async">
+        <li>    
+            <tui-push
+                
+                class="push"
+                heading="{{ val.name }}">
+            {{ val.description}}
+                <button
+                    tuiLink
+                    type="button"
+                        >
+                    {{ val.price }}
+                </button>
+            </tui-push>
+        <li>
+    </ul>
+</div>    
